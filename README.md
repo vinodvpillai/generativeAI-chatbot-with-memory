@@ -19,8 +19,8 @@ This repository provides a conversational AI chatbot interface built with **Lang
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/GenerativeAI-Chatbot-With-Memory.git
-   cd GenerativeAI-Chatbot-With-Memory
+   git clone https://github.com/vinodvpillai/generativeAI-chatbot-with-memory.git
+   cd generativeAI-chatbot-with-memory
    ```
 
 2. **Install dependencies**:
