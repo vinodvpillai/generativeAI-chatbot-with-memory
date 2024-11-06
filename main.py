@@ -81,20 +81,6 @@ with_message_history = RunnableWithMessageHistory(
 )
 
 # Chat function for Gradio
-def chat_old(username, user_query):
-    # Generate user and conversation IDs based on the username
-    user_id = username
-    conversation_id = "1"  # Assume single ongoing conversation per user for simplicity
-
-    # Invoke the model with the user's query and retrieve session context
-    response = with_message_history.invoke(
-        {"question": user_query},
-        config={"configurable": {"user_id": user_id, "conversation_id": conversation_id}}
-    ).content
-    
-    return response
-
-# Chat function for Gradio
 def chat(username, user_query, history):
     # Generate user and conversation IDs based on the username
     user_id = username
